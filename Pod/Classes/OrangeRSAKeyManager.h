@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, nullable, readonly) SecKeyRef localPrivateKey;
 
 /**
+ Disable the designated initializer in NSObject.
+ */
+- (instancetype)init NS_UNAVAILABLE;
+
+/**
  The designated initializer.
  
  @param namespace Unique prefix for use in the keychain.
